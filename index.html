@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Xnames: Find your next Gamertag</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="discription" content="See exactly when the gamertag you want is going to become available, be the first to grab your desired gamertag!"/>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script data-ad-client="ca-pub-4103755316897134" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+
+    <body onload="readList()">
+    <main>
+        <span style="float:right; margin-right:20px"><a href="about.html"><p>About</p></a></span>
+        <img src="logoCrop.png" alt="Xnames" class="logo">
+        <div class="w3-row">
+        <div class="w3-half">
+        <div class="w3-card-2 w3-white w3-padding-large w3-margin">
+                <h3>Search for a Gamertag here</h3>
+                <input class="w3-input w3-border w3-round" type="text" id="tag" placeholder="Desired Gamertag" maxlength="15">
+                <div id="displayTagInfo"></div><br>
+
+                <button class="w3-button w3-green w3-round" id="submit" onclick="setXuidURL()">Search Availability</button>
+                <button class="w3-button w3-green w3-round" id="newItem" onclick="addList()">Add to List</button><br><br>
+                </div></div>
+
+                <div class="w3-half">
+                <div class="w3-card-2 w3-white w3-padding-large w3-margin">
+                        <div id="list">
+                            <table id="tableList" class="w3-table-all">
+                            <tr class="w3-green">
+                                <th>Gamertags</th>
+                                <th>Days Until Avaliable</th>
+                                <th>Remove</th>
+                            </tr>
+                            </div>
+                    </table><br>
+                    
+                    <div id="tableStatus"></div>
+                    <button class="w3-button w3-green w3-round" id="checkList" onclick="updateList()">Update List</button>
+                    <button class="w3-button w3-green w3-round" id="saveList" onclick="saveList()">Save List</button>
+                </div>
+            </div>
+        </div>
+    </main><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="w3-card-2 w3-white w3-padding-large w3-margin">
+        <p style="text-align:center">© 2019 Xnames.info - Created and owned by <a href="https://kylorkersavage.herokuapp.com" target="blank">Kylor Kersavage</a></p>
+            <p>Xnames.info is an unofficial web app of the Xbox LIVE Service, it is in no way endorsed or affiliated to the Microsoft Corporation, Xbox, or Xbox LIVE. Any Xbox images are registered trademarks of their respected owners.</p>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>

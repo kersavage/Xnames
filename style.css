@@ -1,0 +1,23 @@
+ /*Text at top of cards */
+ h3 {
+  font: 400 20px Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Keep grey background */
+body {
+     background-color: #e5e4e4;
+}
+
+/*Display the logo in the center of the page */
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+/*Force scroll bar to always be present, avoids screen shift*/
+html { overflow-y: scroll; }
+
